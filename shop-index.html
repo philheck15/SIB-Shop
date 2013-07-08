@@ -1,0 +1,465 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Madrona Tree</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Philippe Heckly" content="my interpretation of what the Madrona Tree Restaurant's website in Arlington center should look like">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <link href="css/normalize.css" rel="stylesheet">
+
+    <link href="css/meerreset.css" rel="stylesheet">
+
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+
+      @media (max-width: 980px) {
+        /* Enable use of floated navbar text */
+        .navbar-text.pull-right {
+          float: none;
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+      }
+    </style>
+
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+<!--     <link rel="stylesheet" href="css/styles.css" type="text/css" />
+ -->
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="madrona" href="index.html"><h1>Madrona</span><span class="tree"> Tree</h1></span></a>
+          <div class="nav-collapse collapse">
+            <p class="navbar-text pull-right">
+              Logged in as <a href="#" class="navbar-link">Username</a>
+            </p>
+            <ul class="nav">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="#hours">Hours</a></li>
+              <li><a href="#order">Place an order</a></li>
+              <li><a href="#Contact">Contact</a></li>
+              <li><a href="https://maps.google.com/maps?saddr=start&daddr=end">directions</a></li>
+              <div id="map-canvas"/>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <li class="nav-header" id="directions"><h2>Directions</h2></li>
+              <li>315 Broadway</li>
+              <li>Arlington, MA 02474</li>
+              <li>781.859.5551</li>
+              <li>info<wbr>@the<wbr>madrona<wbr>tree<wbr>.com</li>
+              <li class="nav-header" id="hours"><h2>Hours</h2></li>
+              <li>11:00 am - 3:00 pm monday</li>
+              <li>11:00 am – 8:00 pm tuesday, wednesday, thursday</li>
+              <li>8:00 am – 9:00 pm friday-saturday</li>
+              <li>8:00 am - 8:00 pm sunday</li>
+              <li class="nav-header" id="menu"><h2>Menu</h2></li>
+              <li><a href="#sandwiches">Sandwiches</a></li>
+              <li class="active"><a href="#burgers">Burgers</a></li>
+              <li><a href="#more-burgers">More Burgers</a></li>
+              <li><a href="#wraps">Wraps</a></li>
+              <li><a href="#salads">Salads</a></li>
+              <li><a href="#blt">Grilled Cheese, BLT, Hot Dogs</a></li>
+
+              <hr>
+
+              <img id="madrona-pix" src="images/tree.jpg" alt="tree">
+
+              <p id="quote">What makes you different makes you beautiful.</p>
+
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+        <div class="span9">
+          <div class="hero-unit">
+            <h1>Wholesome, organic and local food</h1>
+            <p>We pride ourselves in serving great food from local producers, hormone- and antibiotic-free beef or chicken burgers, Lebanese wraps with homemade hummus, organic hand-cut fries and old-fashioned milkshake.</p>
+            <h1>Dine-in/Take out &amp; catered box lunches</h1>
+            <p>Our catered box lunch menu is available for pickup or delivery with 24 hr notice. We cater to any dietary restrictions and welcome your needs, please just tell us when you order—we'll be glad to accommodate you with a smile. </p>
+<!--             <p><a href="#" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+ -->          </div>
+          <div class="row-fluid">
+            <div class="span4" id="sandwiches">
+              <h2>Sandwiches</h2>
+              <h4>You pick:</h4>
+      <p>1/4 lb. beef, chicken breast, or veggie burger, served on an Iggy's roll.</p><br>
+    <h4>Add-ons:</h4> 
+      <p>chicken</p>
+      <span class="ornament1"> ~ </span>
+      <span class="price1">$4.00</span>
+      <span class="ornament1"> ~ </span>
+      <p>double beef</p> 
+      <span class="ornament1"> ~ </span>
+      <span class="price1">$3.00</span>
+      <span class="ornament1"> ~ </span>
+      <p>bacon</p>
+      <span class="ornament1"> ~ </span>
+      <span class="price1">$2.00</span>
+      <span class="ornament1"> ~ </span>
+      <p>avocado</p>
+      <span class="ornament1"> ~ </span>       
+      <span class="price1">$0.89</span>
+      <span class="ornament1"> ~ </span>
+      <p>grilled poblano, mushroom or onion</p> 
+      <span class="ornament1"> ~ </span>
+      <span class="price1">$0.79 ea.</span>
+      <span class="ornament1"> ~ </span>
+      <p>extra sauce</p>
+      <span class="ornament1"> ~ </span>
+      <span class="price1">$0.49</span>
+      <span class="ornament1"> ~ </span>
+      <p>lettuce, tomato, pickle, or red onion</p> 
+      <span class="ornament1"> ~ </span>
+      <span class="price1">free</span>
+      <span class="ornament1"> ~ </span></a></p>
+<!--               <p><a class="btn" href="#">View details &raquo;</a></p>
+ -->            </div><!--/span-->
+
+            <div class="span4" id="burgers">
+              <h2>Burgers</h2>
+
+      <h4>Grandma Sandy</h4>
+        <span class="fixins">
+        <p>american cheese </p>
+        </span>
+        <span class="ornament"> ~ </span>
+        <span class="price">$7.79</span>
+        <span class="ornament"> ~ </span>
+
+      <h4>Christie</h4> 
+        <span class="fixins">
+        <p>bacon, american cheese, homemade avocado sauce</p>
+        </span>
+        <span class="ornament"> ~ </span>
+        <span class="price">$9.89</span>
+        <span class="ornament"> ~ </span>
+      
+      <h4>Freddie</h4> 
+        <span class="fixins">
+        <p>sweet &amp; red onion, american cheese, special tangy sauce</p>
+        </span>
+        <span class="ornament"> ~ </span>
+        <span class="price">$8.99</span>
+        <span class="ornament"> ~ </span>
+      
+      <h4>Papa’s Fireburger</h4> 
+        <span class="fixins">
+        <p>roasted poblano pepper, american cheese, special tangy sauce</p>
+        </span>
+        <span class="ornament"> ~ </span>
+        <span class="price">$8.99</span>
+        <span class="ornament"> ~ </span>
+      
+      <h4>Christine</h4> 
+        <span class="fixins">
+        <p>locally made blue cheese, american cheese, bacon, fried onion, special tangy sauce</p>
+        </span>
+        <span class="ornament"> ~ </span>
+        <span class="price">$10.99</span>
+        <span class="ornament"> ~ </span>
+      
+      <h4>Luke</h4>
+        <span class="fixins">
+        <p>mushrooms, swiss, homemade avocado sauce</p>
+        </span>
+        <span class="ornament"> ~ </span>
+        <span class="price">$8.99</span>
+        <span class="ornament"> ~ </span>
+      
+            </div><!--/span-->
+
+
+      <div class="span4" id="more-burgers">
+      <h2>More Burgers</h2>
+      
+      <h4>Dad’s Outlaw Burger</h4> 
+        <span class="fixins">
+        <p>double cheeseburger, bacon, lettuce, tomato</p>
+        </span>
+        <span class="ornament"> ~ </span>
+        <span class="price">$12.79</span>
+        <span class="ornament"> ~ </span>
+      
+      <h4>Cousin Marc’s Lettuce Wrap</h4>
+        <span class="fixins">
+        <p>bacon, tomato, wrapped in lettuce</p>
+        </span>
+        <span class="ornament"> ~ </span>
+        <span class="price">$8.99</span>
+        <span class="ornament"> ~ </span>
+      
+      <h4>Tanya</h4> 
+        <span class="fixins">
+        <p>mediterranean spices, feta, lettuce, tomato, red onion, yogurt-mint dressing</p>
+        </span>
+        <span class="ornament"> ~ </span>
+        <span class="price">$8.99</span>
+        <span class="ornament"> ~ </span>
+      
+      <h4>Uncle Marc’s Veggie</h4> 
+        <span class="fixins">
+        <p>portabella mushroom, onion, lentils, spices, cheese, homemade avocado sauce</p>
+        </span>
+        <span class="ornament"> ~ </span>
+        <span class="price">$8.99</span>
+        <span class="ornament"> ~ </span>
+      
+      <h4>Robin’s Honey BBQ</h4> 
+        <span class="fixins">
+        <p>bbq sauce, sweet &amp; red onion, cheddar</p>
+        </span>
+        <span class="ornament"> ~ </span>
+        <span class="price">$8.99</span>
+        <span class="ornament"> ~ </span>
+      
+      <h4>Julie Sliders</h4> 
+        <span class="fixins">
+        <p>two 2 oz. beef &amp; cheese, or tuna, or chicken, or grilled cheese &amp; tomato</p>
+        </span>
+        <span class="ornament"> ~ </span>
+        <span class="price">$7.79</span>
+        <span class="ornament"> ~ </span>
+      
+<!--               <p><a class="btn" href="#">View details &raquo;</a></p>
+ -->            </div><!--/span-->
+
+          </div><!--/row-->
+          <div class="row-fluid">
+
+            <div class="span4" id="wraps">
+              <h2>syrian bread wraps</h2>
+
+      <h4>Shaunda’s falafel</h4> 
+          <span class="fixins">
+          <p>chickpeas, spices, lettuce, tomato, cucumber; optional yogurt-mint dressing or hummus (vegan)</p>
+          </span>
+          <span class="ornament"> ~ </span> 
+          <span class="price">$8.99</span>
+          <span class="ornament"> ~ </span>
+
+      <h4>Shyah’s hummus</h4>
+          <span class="fixins">
+          <p>homemade hummus, lettuce, olive, tomato, cucumber, feta, yogurt-mint dressing</p>
+          </span>
+          <span class="ornament"> ~ </span>
+          <span class="price">$8.59</span>
+          <span class="ornament"> ~ </span>
+
+      <h4>Brandi’s veggie</h4> 
+          <span class="fixins">
+          <p>all the veggies mom wants you to eat with choice of sauce and cheese; ask server for veg choices</p>
+          </span>
+          <span class="ornament"> ~ </span>
+          <span class="price">$8.99</span>
+          <span class="ornament"> ~ </span
+
+      <h4>Grandpa’s kibbeh</h4>
+          <span class="fixins">
+          <p>baked kibbeh (beef, pine nuts, onion, spices), lettuce, tomato, red onion, yogurt-mint dressing</p>
+          </span>
+          <span class="ornament"> ~ </span>
+          <span class="price">$8.99</span>
+          <span class="ornament"> ~ </span>
+
+      <h4>Jimbo’s pesto chicken</h4> 
+          <span class="fixins">
+          <p>with tomato, spinach, mozzarella, mushroom</p>
+          </span>
+          <span class="ornament"> ~ </span>
+          <span class="price">$8.99</span>
+          <span class="ornament"> ~ </span>
+
+      <h4>Debbie’s chicken</h4> 
+          <span class="fixins">
+          <p>iceberg lettuce, tomato, red onion, cucumber, feta, family dressing</p>
+          </span>
+          <span class="ornament"> ~ </span>
+          <span class="price">$8.99</span>
+          <span class="ornament"> ~ </span>
+
+      <h4>Ashley’s sweet &amp; spicy chicken</h4> 
+          <span class="fixins">
+          <p>bbq sauce, grilled onion, poblano, bacon, lettuce, tomato, cheese, tangy sauce</p>
+          </span>
+          <span class="ornament"> ~ </span>
+          <span class="price">$9.99</span>
+          <span class="ornament"> ~ </span>
+
+<!--               <p><a class="btn" href="#">View details &raquo;</a></p>
+ -->            </div><!--/span-->
+
+            <div class="span4" id="salads">
+              <h2>Salads</h2>
+              <p>add chicken for</p>
+        <span class="ornament"> ~ </span> 
+        <span class="price">$4.00</span>
+        <span class="ornament"> ~ </span> 
+        <p>, falafel for</p>
+        <span class="ornament"> ~ </span> 
+        <span class="price">$3.00</span>
+        <span class="ornament"> ~ </span>         
+
+      <h4>C&amp;C’s Bean Salad</h4> 
+        <span class="fixins">
+        <p>black beans, black-eyed peas, green pepper, cilantro, tomato</p>
+        </span>
+        <span class="ornament"> ~ </span>       
+        <span class="price">$7.99</span>
+        <span class="ornament"> ~ </span>
+      <h4>Grandpa’s Lebanese Salad</h4> 
+        <span class="fixins">
+        <p>iceberg lettuce, tomato, red onion, cucumber, feta, family dressing</p>
+        </span>
+        <span class="ornament"> ~ </span>
+        <span class="price">$8.99</span>
+        <span class="ornament"> ~ </span>
+      <h4>Noble salad</h4> 
+        <span class="fixins">
+        <p>lettuce of the day, tomato, red onion, cucumber, mushroom, italian vinaigrette</p>
+        </span>
+        <span class="ornament"> ~ </span>
+        <span class="price">$8.79</span>
+        <span class="ornament"> ~ </span>
+      <h4>Side salad</h4> 
+        <span class="fixins">
+        <p>mixed greens, cucumber, tomato, red onion, italian vinaigrette</p>
+        </span>
+        <span class="ornament"> ~ </span>
+        <span class="price">$4.99</span>
+        <span class="ornament"> ~ </span>
+
+<!--               <p><a class="btn" href="#">View details &raquo;</a></p>
+ -->            </div><!--/span-->
+            
+            <div class="span4" id="blt">
+            <h2>Grilled cheese, BLT, hot dogs</h2>
+
+        <h4>Grilled cheese</h4>
+        <span class="ornament"> ~ </span>
+        <b>tuna</b>
+        <span class="ornament"> ~ </span> 
+        <b>blt</b>
+        <span class="ornament"> ~ </span> 
+        <b>hot dog</b>
+        <p>served on iggy's organic white, wheat, or gluten-free bread</p>
+      
+        <h4>Carrie’s grilled cheese</h4>
+        <span class="fixins">
+        <p>mozzarella, pesto, tomato, grilled peppers</p>
+        </span>
+        <span class="ornament"> ~ </span>
+        <span class="price">$7.99</span>
+        <span class="ornament"> ~ </span>
+      
+        <h4>Nikki’s grilled cheese</h4>
+        <span class="fixins">
+        <p>american cheese, spinach, tomato</p>
+        </span>
+        <span class="ornament"> ~ </span>
+        <span class="price">$6.99</span>
+        <span class="ornament"> ~ </span>
+      
+        <h4>Boston’s tuna fish</h4>
+        <span class="fixins">
+        <p>tuna, mayo, spinach, avocado, red onion</p>
+        </span>
+        <span class="ornament"> ~ </span>
+        <span class="price">$8.69</span>
+        <span class="ornament"> ~ </span>
+      
+        <h4>Gina’s blt</h4>
+        <span class="fixins">
+        <p>bacon, lettuce, avocado, tomato, mayo</p>
+        </span>
+        <span class="ornament"> ~ </span>
+        <span class="price">$7.99</span>
+        <span class="ornament"> ~ </span>
+      
+        <h4>Aunt Sophia’s hot dog</h4>
+        <span class="fixins">
+        <p>nitrate free dog with roll</p>
+        </span>
+        <span class="ornament"> ~ </span>
+        <span class="price">$4.99</span>
+        <span class="ornament"> ~ </span>
+        <span class="fixins">
+        <p>add peppers &amp; onions;</p>
+        </span> 
+        <span class="ornament"> ~ </span>
+        <span class="price">$0.59</span>
+        <span class="ornament"> ~ </span>
+
+<!--               <p><a class="btn" href="#">View details &raquo;</a></p>
+ -->            </div><!--/span-->
+          </div><!--/row-->
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <small>&copy;2013 Madrona Tree, all rights reserved</small>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>
